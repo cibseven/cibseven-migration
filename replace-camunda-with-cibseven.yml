@@ -1,0 +1,34 @@
+---
+type: specs.openrewrite.org/v1beta/recipe
+name: org.cibseven.ReplaceCamundaWithCIBSeven
+displayName: Replace "Camunda" with "CIB seven" in package names and imports
+recipeList:
+  - org.openrewrite.maven.RenamePropertyKey:
+      oldKey: camunda.version
+      newKey: cibseven.version
+  - org.openrewrite.maven.ChangePropertyValue:
+      key: cibseven.version
+      newValue: 1.1.0-SNAPSHOT
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm
+      oldArtifactId: camunda-bom
+      newGroupId: org.cibseven.bpm
+      newArtifactId: cibseven-bom
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm
+      oldArtifactId: camunda-engine
+      newGroupId: org.cibseven.bpm
+      newArtifactId: cibseven-engine
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm
+      oldArtifactId: camunda-engine-spring
+      newGroupId: org.cibseven.bpm
+      newArtifactId: cibseven-engine-spring
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: "org.camunda"
+      newPackageName: "org.cibseven"
+      recursive: true
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: "org.camunda"
+      newFullyQualifiedTypeName: "org.cibseven"
+      recursive: true
