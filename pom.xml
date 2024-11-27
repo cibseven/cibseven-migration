@@ -89,7 +89,9 @@
 					<artifactId>rewrite-maven-plugin</artifactId>
 					<version>5.44.0</version>
 					<configuration>
-						<configLocation>${project.basedir}/replace-camunda-with-cibseven.yml</configLocation>
+						<configLocation>
+							https://cibseven.github.io/cibseven-migration/replace-camunda-with-cibseven.yml
+						</configLocation>
 						<activeRecipes>
 							<recipe>org.cibseven.ReplaceCamundaWithCIBSeven</recipe>
 						</activeRecipes>

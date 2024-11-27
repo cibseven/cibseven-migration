@@ -3,17 +3,49 @@ type: specs.openrewrite.org/v1beta/recipe
 name: org.cibseven.ReplaceCamundaWithCIBSeven
 displayName: Replace "Camunda" with "CIB seven" in package names and imports
 recipeList:
+
   - org.openrewrite.maven.RenamePropertyKey:
       oldKey: camunda.version
       newKey: cibseven.version
   - org.openrewrite.maven.ChangePropertyValue:
       key: cibseven.version
       newValue: 1.1.0-SNAPSHOT
+
+  - org.openrewrite.maven.RenamePropertyKey:
+      oldKey: version.camunda
+      newKey: version.cibseven
+  - org.openrewrite.maven.ChangePropertyValue:
+      key: version.cibseven
+      newValue: 1.1.0-SNAPSHOT
+
+  - org.openrewrite.maven.RenamePropertyKey:
+      oldKey: version.camunda.bpm.assert
+      newKey: version.cibseven.bpm.assert
+  - org.openrewrite.maven.ChangePropertyValue:
+      key: version.cibseven.bpm.assert
+      newValue: 1.1.0-SNAPSHOT
+
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bom
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bom
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.commons
+      oldArtifactId: camunda-commons-bom
+      newGroupId: org.cibseven.commons
+      newArtifactId: cibseven-commons-bom
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.assert
+      oldArtifactId: camunda-bpm-assert
+      newGroupId: org.cibseven.bpm.assert
+      newArtifactId: cibseven-bpm-assert
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.spin
+      oldArtifactId: camunda-spin-bom
+      newGroupId: org.cibseven.spin
+      newArtifactId: cibseven-spin-bom
+
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-engine
@@ -24,6 +56,27 @@ recipeList:
       oldArtifactId: camunda-engine-spring
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-engine-spring
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.identity
+      oldArtifactId: camunda-identity-ldap
+      newGroupId: org.cibseven.bpm.identity
+      newArtifactId: cibseven-identity-ldap
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm
+      oldArtifactId: camunda-engine-rest-core-jakarta
+      newGroupId: org.cibseven.bpm
+      newArtifactId: cibseven-engine-rest-core-jakarta
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.springboot
+      oldArtifactId: camunda-bpm-spring-boot-starter-rest
+      newGroupId: org.cibseven.bpm.springboot
+      newArtifactId: cibseven-bpm-spring-boot-starter-rest
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.spin
+      oldArtifactId: camunda-spin-dataformat-json-jackson
+      newGroupId: org.cibseven.spin
+      newArtifactId: cibseven-spin-dataformat-json-jackson
+
   - org.openrewrite.java.ChangePackage:
       oldPackageName: "org.camunda"
       newPackageName: "org.cibseven"
