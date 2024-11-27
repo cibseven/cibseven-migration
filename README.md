@@ -1,5 +1,13 @@
 # cibseven-migration
 
+## Command line
+
+```bash
+mvn -U org.openrewrite.maven:rewrite-maven-plugin:run -Drewrite.configLocation=https://cibseven.github.io/cibseven-migration/replace-camunda-with-cibseven.yml -Drewrite.activeRecipes=org.cibseven.ReplaceCamundaWithCIBSeven
+```
+
+## Pom File
+
 add this to your maven pom.xml:
 ```xml
   <build>
@@ -37,4 +45,4 @@ do the changes you need and run it localy
 
 ## Clean up
 
-After the migration you can delete the file and rewrite plugin section from you pom.xml
+After the migration you can delete the file and rewrite plugin section from your pom.xml
