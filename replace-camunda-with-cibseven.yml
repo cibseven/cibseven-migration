@@ -9,21 +9,21 @@ recipeList:
       newKey: cibseven.version
   - org.openrewrite.maven.ChangePropertyValue:
       key: cibseven.version
-      newValue: 1.1.0
+      newValue: 2.0.0
 
   - org.openrewrite.maven.RenamePropertyKey:
       oldKey: version.camunda
       newKey: version.cibseven
   - org.openrewrite.maven.ChangePropertyValue:
       key: version.cibseven
-      newValue: 1.1.0
+      newValue: 2.0.0
 
   - org.openrewrite.maven.RenamePropertyKey:
       oldKey: version.camunda.bpm.assert
       newKey: version.cibseven.bpm.assert
   - org.openrewrite.maven.ChangePropertyValue:
       key: version.cibseven.bpm.assert
-      newValue: 1.1.0
+      newValue: 2.0.0
 
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
