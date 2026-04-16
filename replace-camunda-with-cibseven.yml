@@ -1783,3 +1783,14 @@ recipeList:
             oldFullyQualifiedTypeName: "org.camunda"
             newFullyQualifiedTypeName: "org.cibseven"
             recursive: true
+
+  - org.openrewrite.text.FindAndReplace:
+      find: "org\\.camunda(?!\\.feel)"
+      replace: "org.cibseven"
+      regex: true
+      filePattern: "**/*.xml"  
+  - org.openrewrite.text.FindAndReplace:
+      find: "org\\.camunda(?!\\.feel)"
+      replace: "org.cibseven"
+      regex: true
+      filePattern: "**/*.{yml,yaml}"
