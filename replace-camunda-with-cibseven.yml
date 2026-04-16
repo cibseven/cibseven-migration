@@ -771,6 +771,11 @@ recipeList:
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mockito
+      newGroupId: org.cibseven.community.mockito
+      newArtifactId: cibseven-mockito   
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.mockito
       oldArtifactId: camunda-bpm-mockito
       newGroupId: org.cibseven.community.mockito
@@ -1651,6 +1656,11 @@ recipeList:
       oldArtifactId: camunda-bpm-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-root
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mockito
+      newGroupId: org.cibseven.community.mockito
+      newArtifactId: cibseven-mockito   
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.mockito
       oldArtifactId: camunda-bpm-mockito
