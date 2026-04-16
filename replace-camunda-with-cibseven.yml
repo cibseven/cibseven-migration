@@ -1771,28 +1771,16 @@ recipeList:
       oldArtifactId: camunda-process-test-coverage-report-aggregator-maven-plugin
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-aggregator-maven-plugin
-  
-
-  - org.openrewrite.java.search.Preconditions:
-      preconditions:
-        - not:
-            - org.openrewrite.java.search.UsesType:
-                fullyQualifiedTypeName: "org.camunda.feel..*"
-      recipes:
-        - org.openrewrite.java.ChangePackage:
-            oldPackageName: "org.camunda"
-            newPackageName: "org.cibseven"
-            recursive: true
-  - org.openrewrite.java.search.Preconditions:
-      preconditions:
-        - not:
-            - org.openrewrite.java.search.UsesType:
-                fullyQualifiedTypeName: "org.camunda.feel..*"
-      recipes:
-        - org.openrewrite.java.ChangeType:
-            oldFullyQualifiedTypeName: "org.camunda"
-            newFullyQualifiedTypeName: "org.cibseven"
-            recursive: true
+ 
+ 
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: "org.camunda"
+      newPackageName: "org.cibseven"
+      recursive: true
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: "org.camunda"
+      newFullyQualifiedTypeName: "org.cibseven"
+      recursive: true
 
   - org.openrewrite.text.FindAndReplace:
       find: "org\\.camunda(?!\\.feel)"
