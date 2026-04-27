@@ -791,6 +791,11 @@ recipeList:
       newGroupId: org.cibseven.bpm.extension
       newArtifactId: cibseven-keycloak-run
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.testing
+      oldArtifactId: camunda-bpm-jgiven
+      newGroupId: org.cibseven.community
+      newArtifactId: cibseven-bpm-jgiven
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
       newGroupId: org.cibseven.community.mockito
@@ -1696,6 +1701,11 @@ recipeList:
       oldArtifactId: camunda-platform-7-keycloak-run
       newGroupId: org.cibseven.bpm.extension
       newArtifactId: cibseven-keycloak-run
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.testing
+      oldArtifactId: camunda-bpm-jgiven
+      newGroupId: org.cibseven.community
+      newArtifactId: cibseven-bpm-jgiven
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
