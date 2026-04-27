@@ -1922,6 +1922,12 @@ recipeList:
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-aggregator-maven-plugin
  
+  # exception
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.cibseven.community.process_test_coverage
+      oldArtifactId: cibseven-process-test-coverage-root
+      newGroupId: org.cibseven.community.process_test_coverage
+      newArtifactId: cibseven-process-test-coverage-junit4-platform-7
  
   - org.openrewrite.maven.UpgradeDependencyVersion:
       groupId: org.cibseven.spin
@@ -2015,3 +2021,19 @@ recipeList:
       replace: "org.cibseven"
       regex: true
       filePattern: "**/*.{yml,yaml}"
+
+  #exceptions
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRule
+      newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule
+
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRuleBuilder
+      newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder
+
+  - org.openrewrite.xml.ChangeTagAttribute:
+      elementName: bean
+      attributeName: class
+      oldValue: org.cibseven.bpm.extension.process_test_coverage.junit.rules.ProcessCoverageInMemProcessEngineConfiguration
+      newValue: org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration
+      filePattern: "**/*.xml"
