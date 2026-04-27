@@ -9,21 +9,21 @@ recipeList:
       newKey: cibseven.version
   - org.openrewrite.maven.ChangePropertyValue:
       key: cibseven.version
-      newValue: 2.0.0
+      newValue: 2.0.6-ee
 
   - org.openrewrite.maven.RenamePropertyKey:
       oldKey: version.camunda
       newKey: version.cibseven
   - org.openrewrite.maven.ChangePropertyValue:
       key: version.cibseven
-      newValue: 2.0.0
+      newValue: 2.0.6-ee
 
   - org.openrewrite.maven.RenamePropertyKey:
       oldKey: version.camunda.bpm.assert
       newKey: version.cibseven.bpm.assert
   - org.openrewrite.maven.ChangePropertyValue:
       key: version.cibseven.bpm.assert
-      newValue: 2.0.0
+      newValue: 2.0.6-ee
 
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
@@ -155,7 +155,7 @@ recipeList:
       oldArtifactId: camunda-spin-dataformat-json-jackson
       newGroupId: org.cibseven.spin
       newArtifactId: cibseven-spin-dataformat-json-jackson
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.spin
       oldArtifactId: camunda-spin-dataformat-xml-dom
@@ -201,25 +201,25 @@ recipeList:
       oldArtifactId: camunda-bpm-assert-root
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert-root
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-assert-root
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert-root
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.springboot.project
       oldArtifactId: camunda-bpm-spring-boot-starter-root
@@ -570,19 +570,19 @@ recipeList:
       oldArtifactId: camunda-bpm-junit5
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-junit5
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-junit5
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-junit5
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-assert-qa
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert-qa
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-engine-cdi
@@ -773,13 +773,13 @@ recipeList:
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak
@@ -860,7 +860,7 @@ recipeList:
       oldArtifactId: camunda-bpm-mockito
       newGroupId: org.cibseven.community.mockito
       newArtifactId: cibseven-mockito 
-      newVersion: 2.0.0  
+      newVersion: 2.0.0 
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.mockito
       oldArtifactId: camunda-bpm-mockito
@@ -878,133 +878,133 @@ recipeList:
       oldArtifactId: camunda-process-test-coverage-bom
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-bom
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-bom
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-bom
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-core
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-core
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-core
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-core
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-engine-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-engine-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-engine-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-engine-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit4-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-junit4-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit5-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-common
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-junit5-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-common
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit5-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-junit5-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-spring-test-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-common
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-spring-test-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-common
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-spring-test-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-spring-test-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-starter-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-starter-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-starter-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-starter-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-report-generator
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-generator
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-report-generator
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-generator
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-report-aggregator-maven-plugin
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-aggregator-maven-plugin
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-report-aggregator-maven-plugin
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-aggregator-maven-plugin
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
 
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
@@ -1136,7 +1136,7 @@ recipeList:
       oldArtifactId: camunda-spin-dataformat-json-jackson
       newGroupId: org.cibseven.spin
       newArtifactId: cibseven-spin-dataformat-json-jackson
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.spin
       oldArtifactId: camunda-spin-dataformat-xml-dom
@@ -1182,25 +1182,25 @@ recipeList:
       oldArtifactId: camunda-bpm-assert-root
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert-root
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-assert-root
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert-root
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.springboot.project
       oldArtifactId: camunda-bpm-spring-boot-starter-root
@@ -1546,25 +1546,25 @@ recipeList:
       oldArtifactId: camunda-dmn-junit5
       newGroupId: org.cibseven.bpm.dmn
       newArtifactId: cibseven-dmn-junit5
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-junit5
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-junit5
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-junit5
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-junit5
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-assert-qa
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert-qa
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-engine-cdi
@@ -1755,19 +1755,19 @@ recipeList:
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.assert
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
       newArtifactId: cibseven-bpm-assert 
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak
@@ -1866,133 +1866,133 @@ recipeList:
       oldArtifactId: camunda-bpm-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-root
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-bpm-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-root
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-core
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-core
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-core
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-core
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-engine-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-engine-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-engine-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-engine-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit4-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-junit4-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit5-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-common  
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-junit5-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-common
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit5-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-junit5-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit5-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-spring-test-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-common
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-spring-test-common
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-common 
-      newVersion: 2.0.0  
+      newVersion: 2.0.6-ee  
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-spring-test-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-platform-7
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-spring-test-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-spring-test-platform-7  
-      newVersion: 2.0.0 
+      newVersion: 2.0.6-ee 
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-starter-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-starter-platform-7   
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-starter-platform-7
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-starter-platform-7 
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-report-generator
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-generator  
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-report-generator
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-generator 
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-report-aggregator-maven-plugin
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-aggregator-maven-plugin
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-process-test-coverage-report-aggregator-maven-plugin
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-report-aggregator-maven-plugin
-      newVersion: 2.0.0
+      newVersion: 2.0.6-ee
  
   # exception
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
