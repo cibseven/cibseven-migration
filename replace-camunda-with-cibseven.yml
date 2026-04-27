@@ -1929,8 +1929,8 @@ recipeList:
  
   # exception
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
-      oldGroupId: org.cibseven.community.process_test_coverage
-      oldArtifactId: cibseven-process-test-coverage-root
+      oldGroupId: org.camunda.community.process_test_coverage
+      oldArtifactId: camunda-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
  
