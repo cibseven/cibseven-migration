@@ -811,6 +811,21 @@ recipeList:
       newGroupId: org.cibseven.community.data
       newArtifactId: cibseven-bpm-data-parent
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.camunda-api
+      oldArtifactId: camunda-bpm-engine-api
+      newGroupId: org.cibseven.community.cibseven-api
+      newArtifactId: cibseven-bpm-engine-api
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.camunda-api
+      oldArtifactId: camunda-dmn-engine-api
+      newGroupId: org.cibseven.community.cibseven-api
+      newArtifactId: cibseven-dmn-engine-api
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.camunda-api
+      oldArtifactId: camunda-api-parent
+      newGroupId: org.cibseven.community.cibseven-api
+      newArtifactId: cibseven-api-parent
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
       newGroupId: org.cibseven.community.mockito
@@ -1736,6 +1751,21 @@ recipeList:
       oldArtifactId: camunda-bpm-data-parent
       newGroupId: org.cibseven.community.data
       newArtifactId: cibseven-bpm-data-parent
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.camunda-api
+      oldArtifactId: camunda-bpm-engine-api
+      newGroupId: org.cibseven.community.cibseven-api
+      newArtifactId: cibseven-bpm-engine-api
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.camunda-api
+      oldArtifactId: camunda-dmn-engine-api
+      newGroupId: org.cibseven.community.cibseven-api
+      newArtifactId: cibseven-dmn-engine-api
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.camunda-api
+      oldArtifactId: camunda-api-parent
+      newGroupId: org.cibseven.community.cibseven-api
+      newArtifactId: cibseven-api-parent
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
