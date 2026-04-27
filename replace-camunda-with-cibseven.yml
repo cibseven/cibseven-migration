@@ -1996,6 +1996,18 @@ recipeList:
  
   # exception
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-process-test-coverage
+      newGroupId: org.cibseven.community.process_test_coverage
+      newArtifactId: cibseven-process-test-coverage-junit4-platform-7
+      newVersion: 2.0.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-process-test-coverage
+      newGroupId: org.cibseven.community.process_test_coverage
+      newArtifactId: cibseven-process-test-coverage-junit4-platform-7
+      newVersion: 2.0.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
@@ -2032,10 +2044,12 @@ recipeList:
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRule
       newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule
-
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRuleBuilder
       newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.delegate.DelegateExecutionFake
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.delegate.DelegateExecutionFake
 
   - org.openrewrite.xml.ChangeTagAttribute:
       elementName: bean
