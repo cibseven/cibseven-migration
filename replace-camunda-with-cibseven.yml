@@ -24,6 +24,11 @@ recipeList:
   - org.openrewrite.maven.ChangePropertyValue:
       key: version.cibseven.bpm.assert
       newValue: 2.0.0
+    
+  - org.openrewrite.maven.UpgradeDependencyVersion:
+      groupId: org.camunda.spin
+      artifactId: camunda-spin-dataformat-json-jackson
+      newVersion: 2.0.0
 
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
@@ -1929,10 +1934,7 @@ recipeList:
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
  
-  - org.openrewrite.maven.UpgradeDependencyVersion:
-      groupId: org.camunda.spin
-      artifactId: camunda-spin-dataformat-json-jackson
-      newVersion: 2.0.0
+
   - org.openrewrite.maven.UpgradeDependencyVersion:
       groupId: org.cibseven.spin
       artifactId: cibseven-spin-dataformat-json-jackson
