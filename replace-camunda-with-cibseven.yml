@@ -811,6 +811,26 @@ recipeList:
       newGroupId: org.cibseven.community.data
       newArtifactId: cibseven-bpm-data-parent
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-core
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-core
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-eventbus
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-eventbus
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-spring-starter
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-spring-starter
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-spring
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-spring
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.camunda-api
       oldArtifactId: camunda-bpm-engine-api
       newGroupId: org.cibseven.community.cibseven-api
@@ -1751,6 +1771,26 @@ recipeList:
       oldArtifactId: camunda-bpm-data-parent
       newGroupId: org.cibseven.community.data
       newArtifactId: cibseven-bpm-data-parent
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-core
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-core
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-eventbus
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-eventbus
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-spring-starter
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-spring-starter
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension.reactor
+      oldArtifactId: camunda-bpm-reactor-spring
+      newGroupId: org.cibseven.community.reactor
+      newArtifactId: cibseven-reactor-spring
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.camunda-api
       oldArtifactId: camunda-bpm-engine-api
