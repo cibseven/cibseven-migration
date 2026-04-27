@@ -801,6 +801,16 @@ recipeList:
       newGroupId: org.cibseven.community
       newArtifactId: cibseven-bpm-jgiven-parent
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.data
+      oldArtifactId: camunda-bpm-data
+      newGroupId: org.cibseven.community.data
+      newArtifactId: cibseven-bpm-data
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.data
+      oldArtifactId: camunda-bpm-data-parent
+      newGroupId: org.cibseven.community.data
+      newArtifactId: cibseven-bpm-data-parent
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
       newGroupId: org.cibseven.community.mockito
@@ -1715,7 +1725,17 @@ recipeList:
       oldGroupId: io.holunda.testing
       oldArtifactId: camunda-bpm-jgiven-parent
       newGroupId: org.cibseven.community
-      newArtifactId: cibseven-bpm-jgiven-parent
+      newArtifactId: cibseven-bpm-jgiven-parent      
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.data
+      oldArtifactId: camunda-bpm-data
+      newGroupId: org.cibseven.community.data
+      newArtifactId: cibseven-bpm-data
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: io.holunda.data
+      oldArtifactId: camunda-bpm-data-parent
+      newGroupId: org.cibseven.community.data
+      newArtifactId: cibseven-bpm-data-parent
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
