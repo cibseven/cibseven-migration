@@ -1869,7 +1869,7 @@ recipeList:
       newVersion: 2.0.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
-      oldArtifactId: camunda-bpm-process-test-coverage
+      oldArtifactId: camunda-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-root
       newVersion: 2.0.0
@@ -2041,6 +2041,11 @@ recipeList:
       filePattern: "**/*.{yml,yaml}"
 
   #exceptions
+  ## imports
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.cibseven.bpm.extension.mockito
+      newPackageName: org.cibseven.community.mockito
+  ## types
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRule
       newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule
@@ -2049,7 +2054,13 @@ recipeList:
       newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.delegate.DelegateExecutionFake
-      newFullyQualifiedTypeName: org.cibseven.community.mockito.delegate.DelegateExecutionFake
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.delegate.DelegateExecutionFake  
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.ProcessExpressions.registerCallActivityMock
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.ProcessExpressions.registerCallActivityMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.DelegateExpressions.registerJavaDelegateMock
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.DelegateExpressions.registerJavaDelegateMock
 
   - org.openrewrite.xml.ChangeTagAttribute:
       elementName: bean
