@@ -2227,3 +2227,15 @@ recipeList:
       oldValue: org.cibseven.bpm.extension.process_test_coverage.junit.rules.ProcessCoverageInMemProcessEngineConfiguration
       newValue: org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration
       filePattern: "**/*.xml"
+
+  ## META-INF/services
+  - org.openrewrite.text.FindAndReplace:
+      find: org.camunda
+      replace: org.cibseven
+      filePattern: '**/META-INF/services/**'
+  - org.openrewrite.RenameFile:
+      fileMatcher: '**/META-INF/services/org.camunda.bpm.engine.rest.spi.ProcessEngineProvider'
+      fileName: org.cibseven.bpm.engine.rest.spi.ProcessEngineProvider
+  - org.openrewrite.RenameFile:
+      fileMatcher: '**/META-INF/services/org.camunda.bpm.application.ProcessApplicationElResolver'
+      fileName: org.cibseven.bpm.application.ProcessApplicationElResolver
