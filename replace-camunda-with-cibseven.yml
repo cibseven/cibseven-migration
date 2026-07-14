@@ -925,6 +925,14 @@ recipeList:
       newVersion: 2.0.0
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
+      # until version 0.4.0, then it becomes camunda-bpm-process-test-coverage-core
+      # however, the java classes correspond to the process-test-coverage-junit4-platform-7
+      oldArtifactId: camunda-bpm-process-test-coverage
+      newGroupId: org.cibseven.community.process_test_coverage
+      newArtifactId: cibseven-process-test-coverage-junit4-platform-7
+      newVersion: 2.0.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-process-test-coverage-junit4
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
@@ -1953,7 +1961,7 @@ recipeList:
   #    newVersion: 2.0.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
-      oldArtifactId: camunda-process-test-coverage
+      oldArtifactId: camunda-process-test-coverage-root
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-root
       newVersion: 2.0.0
@@ -1984,6 +1992,14 @@ recipeList:
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.community.process_test_coverage
       oldArtifactId: camunda-process-test-coverage-junit4-platform-7
+      newGroupId: org.cibseven.community.process_test_coverage
+      newArtifactId: cibseven-process-test-coverage-junit4-platform-7
+      newVersion: 2.0.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension      
+      # until version 0.4.0, then it becomes camunda-bpm-process-test-coverage-core
+      # however, the java classes correspond to the process-test-coverage-junit4-platform-7
+      oldArtifactId: camunda-bpm-process-test-coverage
       newGroupId: org.cibseven.community.process_test_coverage
       newArtifactId: cibseven-process-test-coverage-junit4-platform-7
       newVersion: 2.0.0
@@ -2160,18 +2176,40 @@ recipeList:
       oldArtifactId: camunda-platform-scenario-test-7.7
       newGroupId: org.cibseven.community.scenario.project
       newArtifactId: cibseven-platform-scenario-test-7.7
-      newVersion: 2.0.0
- 
- 
+      newVersion: 2.0.0  
+
+  ## Imports
   - org.openrewrite.java.ChangePackage:
       oldPackageName: "org.camunda"
       newPackageName: "org.cibseven"
       recursive: true
+  - org.openrewrite.java.ChangePackage:
+      oldPackageName: org.cibseven.bpm.extension.mockito
+      newPackageName: org.cibseven.community.mockito
+
+  ## Types
   - org.openrewrite.java.ChangeType:
       oldFullyQualifiedTypeName: "org.camunda"
       newFullyQualifiedTypeName: "org.cibseven"
       recursive: true
+  # specific
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRule
+      newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRule
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.process_test_coverage.junit.rules.TestCoverageProcessEngineRuleBuilder
+      newFullyQualifiedTypeName: org.cibseven.community.process_test_coverage.junit4.platform7.rules.TestCoverageProcessEngineRuleBuilder
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.delegate.DelegateExecutionFake
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.delegate.DelegateExecutionFake  
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.ProcessExpressions.registerCallActivityMock
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.ProcessExpressions.registerCallActivityMock
+  - org.openrewrite.java.ChangeType:
+      oldFullyQualifiedTypeName: org.cibseven.bpm.extension.mockito.DelegateExpressions.registerJavaDelegateMock
+      newFullyQualifiedTypeName: org.cibseven.community.mockito.DelegateExpressions.registerJavaDelegateMock
 
+  ## XML, YAML
   - org.openrewrite.text.FindAndReplace:
       find: "org\\.camunda(?!\\.feel)"
       replace: "org.cibseven"
@@ -2182,3 +2220,10 @@ recipeList:
       replace: "org.cibseven"
       regex: true
       filePattern: "**/*.{yml,yaml}"
+  # specific
+  - org.openrewrite.xml.ChangeTagAttribute:
+      elementName: bean
+      attributeName: class
+      oldValue: org.cibseven.bpm.extension.process_test_coverage.junit.rules.ProcessCoverageInMemProcessEngineConfiguration
+      newValue: org.cibseven.community.process_test_coverage.engine.platform7.ProcessCoverageInMemProcessEngineConfiguration
+      filePattern: "**/*.xml"
