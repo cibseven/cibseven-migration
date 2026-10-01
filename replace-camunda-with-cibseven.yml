@@ -1865,91 +1865,91 @@ recipeList:
       oldArtifactId: camunda-platform-7-keycloak
       newGroupId: org.cibseven.bpm.extension
       newArtifactId: cibseven-keycloak
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-all
       newGroupId: org.cibseven.bpm.extension
       newArtifactId: cibseven-keycloak-all
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-root
       newGroupId: org.cibseven.bpm.extension
       newArtifactId: cibseven-keycloak-root
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-run
       newGroupId: org.cibseven.bpm.extension
       newArtifactId: cibseven-keycloak-run
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.testing
       oldArtifactId: camunda-bpm-jgiven
       newGroupId: org.cibseven.community
       newArtifactId: cibseven-bpm-jgiven
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.testing
       oldArtifactId: camunda-bpm-jgiven-parent
       newGroupId: org.cibseven.community
       newArtifactId: cibseven-bpm-jgiven-parent   
-      newVersion: 2.0.0   
+      newVersion: 2.2.0   
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.data
       oldArtifactId: camunda-bpm-data
       newGroupId: org.cibseven.community.data
       newArtifactId: cibseven-bpm-data
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.data
       oldArtifactId: camunda-bpm-data-parent
       newGroupId: org.cibseven.community.data
       newArtifactId: cibseven-bpm-data-parent
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.reactor
       oldArtifactId: camunda-bpm-reactor-core
       newGroupId: org.cibseven.community.reactor
       newArtifactId: cibseven-reactor-core
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.reactor
       oldArtifactId: camunda-bpm-reactor-eventbus
       newGroupId: org.cibseven.community.reactor
       newArtifactId: cibseven-reactor-eventbus
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.reactor
       oldArtifactId: camunda-bpm-reactor-spring-starter
       newGroupId: org.cibseven.community.reactor
       newArtifactId: cibseven-reactor-spring-starter
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension.reactor
       oldArtifactId: camunda-bpm-reactor-spring
       newGroupId: org.cibseven.community.reactor
       newArtifactId: cibseven-reactor-spring
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.camunda-api
       oldArtifactId: camunda-bpm-engine-api
       newGroupId: org.cibseven.community.cibseven-api
       newArtifactId: cibseven-bpm-engine-api
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.camunda-api
       oldArtifactId: camunda-dmn-engine-api
       newGroupId: org.cibseven.community.cibseven-api
       newArtifactId: cibseven-dmn-engine-api
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: io.holunda.camunda-api
       oldArtifactId: camunda-api-parent
       newGroupId: org.cibseven.community.cibseven-api
       newArtifactId: cibseven-api-parent
-      newVersion: 2.0.0
+      newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-mockito
