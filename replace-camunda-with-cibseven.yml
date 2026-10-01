@@ -780,25 +780,25 @@ recipeList:
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-all
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak-all
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-root
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak-root
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-run
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak-run
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
@@ -1915,25 +1915,25 @@ recipeList:
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-all
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak-all
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-root
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak-root
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-platform-7-keycloak-run
-      newGroupId: org.cibseven.bpm.extension
+      newGroupId: org.cibseven.community.keycloak
       newArtifactId: cibseven-keycloak-run
       newVersion: 2.2.0
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
