@@ -749,21 +749,6 @@ recipeList:
       newGroupId: org.cibseven.bpm.wildfly
       newArtifactId: cibseven-bpm-wildfly
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
-      oldGroupId: org.camunda.bpm.wildfly
-      oldArtifactId: camunda-wildfly26
-      newGroupId: org.cibseven.bpm.wildfly
-      newArtifactId: cibseven-wildfly26
-  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
-      oldGroupId: org.camunda.bpm.wildfly
-      oldArtifactId: camunda-wildfly26-subsystem
-      newGroupId: org.cibseven.bpm.wildfly
-      newArtifactId: cibseven-wildfly26-subsystem
-  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
-      oldGroupId: org.camunda.bpm.wildfly
-      oldArtifactId: camunda-wildfly26-modules
-      newGroupId: org.cibseven.bpm.wildfly
-      newArtifactId: cibseven-wildfly26-modules
-  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.assert
       oldArtifactId: camunda-bpm-assert
       newGroupId: org.cibseven.bpm
@@ -1829,21 +1814,6 @@ recipeList:
       oldArtifactId: camunda-bpm-wildfly
       newGroupId: org.cibseven.bpm.wildfly
       newArtifactId: cibseven-bpm-wildfly
-  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
-      oldGroupId: org.camunda.bpm.wildfly
-      oldArtifactId: camunda-wildfly26
-      newGroupId: org.cibseven.bpm.wildfly
-      newArtifactId: cibseven-wildfly26
-  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
-      oldGroupId: org.camunda.bpm.wildfly
-      oldArtifactId: camunda-wildfly26-subsystem
-      newGroupId: org.cibseven.bpm.wildfly
-      newArtifactId: cibseven-wildfly26-subsystem
-  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
-      oldGroupId: org.camunda.bpm.wildfly
-      oldArtifactId: camunda-wildfly26-modules
-      newGroupId: org.cibseven.bpm.wildfly
-      newArtifactId: cibseven-wildfly26-modules
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm.extension
       oldArtifactId: camunda-bpm-assert
