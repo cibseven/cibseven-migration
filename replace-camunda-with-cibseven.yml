@@ -25,6 +25,10 @@ recipeList:
       key: version.cibseven.bpm.assert
       newValue: 2.2.0
 
+  - org.openrewrite.maven.ChangePropertyValue:
+      key: spring.version
+      newValue: 6.2.11
+
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
       oldArtifactId: camunda-root
