@@ -1105,6 +1105,30 @@ recipeList:
       newGroupId: org.cibseven.community.scenario.project
       newArtifactId: cibseven-platform-scenario-test-7.7
       newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-root
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-root
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-complete-springboot-starter
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-complete-springboot-starter
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-openapi-java
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-openapi-java
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-openapi-springboot
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-openapi-springboot
+      newVersion: 2.2.0
 
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
@@ -2170,7 +2194,31 @@ recipeList:
       oldArtifactId: camunda-platform-scenario-test-7.7
       newGroupId: org.cibseven.community.scenario.project
       newArtifactId: cibseven-platform-scenario-test-7.7
-      newVersion: 2.2.0  
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-root
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-root
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-complete-springboot-starter
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-complete-springboot-starter
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-openapi-java
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-openapi-java
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.community 
+      oldArtifactId: camunda-engine-rest-client-openapi-springboot
+      newGroupId: org.cibseven.community.rest-client
+      newArtifactId: cibseven-engine-rest-client-openapi-springboot
+      newVersion: 2.2.0
 
   ## Imports
   - org.openrewrite.java.ChangePackage:
