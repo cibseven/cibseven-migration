@@ -27,7 +27,7 @@ recipeList:
 
   - org.openrewrite.maven.ChangePropertyValue:
       key: spring.version
-      newValue: 6.2.11
+      newValue: 7.0.6
 
   - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
