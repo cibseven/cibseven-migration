@@ -1105,6 +1105,29 @@ recipeList:
       newGroupId: org.cibseven.community.scenario.project
       newArtifactId: cibseven-platform-scenario-test-7.7
       newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldArtifactId: camunda-bpm-mail-root
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-root
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mail-core
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-core
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mail-extension-run
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-extension-run
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeManagedDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mail-spring-boot-starter
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-spring-boot-starter
+      newVersion: 2.2.0
 
   - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
       oldGroupId: org.camunda.bpm
@@ -2170,7 +2193,30 @@ recipeList:
       oldArtifactId: camunda-platform-scenario-test-7.7
       newGroupId: org.cibseven.community.scenario.project
       newArtifactId: cibseven-platform-scenario-test-7.7
-      newVersion: 2.2.0  
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldArtifactId: camunda-bpm-mail-root
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-root
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mail-core
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-core
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mail-extension-run
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-extension-run
+      newVersion: 2.2.0
+  - org.openrewrite.maven.ChangeDependencyGroupIdAndArtifactId:
+      oldGroupId: org.camunda.bpm.extension
+      oldArtifactId: camunda-bpm-mail-spring-boot-starter
+      newGroupId: org.cibseven.community.mail
+      newArtifactId: cibseven-mail-spring-boot-starter
+      newVersion: 2.2.0
 
   ## Imports
   - org.openrewrite.java.ChangePackage:
