@@ -87,7 +87,7 @@
 				<plugin>
 					<groupId>org.openrewrite.maven</groupId>
 					<artifactId>rewrite-maven-plugin</artifactId>
-					<version>5.44.0</version>
+					<version>6.46.1</version>
 					<configuration>
 						<configLocation>
 							https://cibseven.github.io/cibseven-migration/replace-camunda-with-cibseven.yml
